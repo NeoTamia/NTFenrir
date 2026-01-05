@@ -1,5 +1,5 @@
 plugins {
-    id("neotamia-build")
+    id("ntfenrir-build")
 }
 
 extra["localJarRepo"] = true

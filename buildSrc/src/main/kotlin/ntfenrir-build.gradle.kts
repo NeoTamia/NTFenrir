@@ -12,7 +12,7 @@ plugins {
     id("com.diffplug.spotless")
 }
 
-group = "re.neotamia.kotlintemplate"
+group = "re.neotamia.ntfenrir"
 version = findProperty("version")!!
 
 repositories {
@@ -143,9 +143,9 @@ project.afterEvaluate {
                     val kebabName = project.name.replace(Regex("(?<=[a-z])(?=[A-Z])"), "-").lowercase()
                     artifactId = kebabName
                     pom {
-                        name = "KotlinTemplate ${project.name}"
-                        description = "Kotlin Template, ${project.name} module."
-                        url = "https://github.com/NeoTamia/kotlin-template"
+                        name = "NTFenrir ${project.name}"
+                        description = "NTFenrir, ${project.name} module."
+                        url = "https://github.com/NeoTamia/NTFenrir"
                         developers {
                             developer {
                                 id = "NeoTamia"
@@ -153,9 +153,9 @@ project.afterEvaluate {
                             }
                         }
                         scm {
-                            connection = "scm:git:https://github.com/NeoTamia/kotlin-template.git"
-                            developerConnection = "scm:git:ssh://git@github.com:NeoTamia/kotlin-template.git"
-                            url = "https://github.com/NeoTamia/kotlin-template"
+                            connection = "scm:git:https://github.com/NeoTamia/NTFenrir.git"
+                            developerConnection = "scm:git:ssh://git@github.com:NeoTamia/NTFenrir.git"
+                            url = "https://github.com/NeoTamia/NTFenrir"
                         }
                     }
                     // javadoc & sources jars already added with `components["java"]`
